@@ -52,38 +52,3 @@ if (randomNumer1 > randomNumber2) {
 else{
   document.querySelector("h1").innerHTML = "🚩 Player 3 is the winner!";
 }
-
-
-
-
-
-// } else {
-// //   document.querySelector("h1").innerHTML = "🚩 Player 3 is the winner!";
-// } else if (randomNumber2 == randomNumer3) {
-//   document.querySelector("h1").innerHTML = "🚩 Player 3 and 2 are the winners!";
-// }
-// else {
-//   document.querySelector("h1").innerHTML = "There was a tie";
-// }
-
-// if (randomNumer1 > randomNumber2){
-//   if(randomNumer1 > randomNumber3){
-//     document.querySelector("h1").innerHTML = "🚩 Player 1 is the winner!";
-//   }else{
-//     document.querySelector("h1").innerHTML = "🚩 Player 3 is the winner!";
-//   }
-// }else if(randomNumer2 > randomNumber3){
-//     document.querySelector("h1").innerHTML = "🚩 Player 2 is the winner!";
-// }
-// else{
-//   document.querySelector("h1").innerHTML = "Draw";
-//
-// }
-
-
-
-
-// else {
-//   document.querySelector("h1").innerHTML = "Draw";
-//
-// }
