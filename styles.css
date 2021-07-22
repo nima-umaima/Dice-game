@@ -1,5 +1,5 @@
 .container {
-  width: 70%;
+  width: 100%;
   margin: auto;
   text-align: center;
 }
@@ -16,26 +16,28 @@ body {
 
 h1 {
   margin: 30px;
-  font-family: 'Lobster', cursive;
+  font-family: 'Satisfy', cursive;
+  /* font-family: 'Lobster', cursive; */
   text-shadow: 5px 0 #232931;
   font-size: 8rem;
-  color: #4ECCA3;
+  color: blue;
 }
 
 p {
   font-size: 2rem;
-  color: #4ECCA3;
-  font-family: 'Indie Flower', cursive;
+  color: blue;
+  font-family: 'Zen Loop', cursive;
+  /* font-family: 'Indie Flower', cursive; */
 }
 
 img {
   width: 80%;
 }
 
-/* footer {
+footer {
   margin-top: 5%;
   color: #EEEEEE;
   text-align: center;
   font-family: 'Indie Flower', cursive;
 
-} */
+}
