@@ -3,17 +3,9 @@
   margin: auto;
   text-align: center;
 }
-
-.dice {
-  text-align: center;
-  display: inline-block;
-
-}
-
 body {
   background-color: #393E46;
 }
-
 h1 {
   margin: 30px;
   font-family: 'Satisfy', cursive;
@@ -21,18 +13,13 @@ h1 {
   font-size: 6rem;
   color: blue;
 }
-
 p {
   font-size: 2rem;
   color: blue;
   font-family: 'Zen Loop', cursive;
 }
-
 img {
   width: 80%;
-}
-.refresh-btn{
-  margin-top: 50px;
 }
 button{
   background-color: blue;
@@ -41,10 +28,10 @@ button{
   width: 10%;
   font-family: 'Satisfy', cursive;
 }
-footer {
-  margin-top: 5%;
-  color: #EEEEEE;
+.dice {
   text-align: center;
-  font-family: 'Indie Flower', cursive;
-
+  display: inline-block;
+}
+.refresh-btn{
+  margin-top: 50px;
 }
