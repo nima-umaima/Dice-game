@@ -20,35 +20,77 @@ var randomImageSource3 = "images/" + randomDiceImage3;
 var image3 = document.querySelectorAll("img")[2];
 image3.setAttribute("src", randomImageSource3);
 
-// // Dice 4
-// var randomNumber4 = Math.floor(Math.random() * 6) + 1;
-// var randomDiceImage4 = "dice" + randomNumber4 + ".png"
-// var randomImageSource4 = "images/" + randomDiceImage4;
-// var image4 = document.querySelectorAll("img")[3];
-// image4.setAttribute("src", randomImageSource4);
+// Dice 4
+var randomNumber4 = Math.floor(Math.random() * 6) + 1;
+var randomDiceImage4 = "dice" + randomNumber4 + ".png"
+var randomImageSource4 = "images/" + randomDiceImage4;
+var image4 = document.querySelectorAll("img")[3];
+image4.setAttribute("src", randomImageSource4);
 
 
 if (randomNumer1 > randomNumber2) {
   if (randomNumer1 > randomNumer3) {
-    document.querySelector("h1").innerHTML = "🚩 Player 1 is the winner!";
-  } else if (randomNumer1 == randomNumer3) {
-    document.querySelector("h1").innerHTML = "🚩 Player 3 and 1 are the winners!";
-  } else {
+    if (randomNumer1 > randomNumber4) {
+      document.querySelector("h1").innerHTML = "🚩 Player 1 is the winner!";
+    } else if (randomNumer1 == randomNumber4){
+      document.querySelector("h1").innerHTML = "🚩 Player 1 and 4 are the winners!";
+    } else {
+        document.querySelector("h1").innerHTML = "🚩 Player 4 is the winner!";
+    }
+  } else if (randomNumer1 == randomNumer3){
+    if (randomNumer1 > randomNumber4){
+        document.querySelector("h1").innerHTML = "🚩 Player 1 and 3 are the winners!";
+    }else{
+      document.querySelector("h1").innerHTML = "🚩 Player 4 is the winner!";
+    }
+  } else if (randomNumer3 > randomNumber4){
     document.querySelector("h1").innerHTML = "🚩 Player 3 is the winner!";
+  } else if (randomNumer3 == randomNumber4) {
+    document.querySelector("h1").innerHTML = "🚩 Player 3 and 4 are the winner!";
+  } else{
+    document.querySelector("h1").innerHTML = "🚩 Player 4 is the winner!";
   }
-} else if (randomNumber2 == randomNumer1) {
-  if (randomNumber2 > randomNumer3){
-    document.querySelector("h1").innerHTML = "🚩 Player 2 and 1 are the winners!";
-  }else if(randomNumber2 == randomNumer3){
-    document.querySelector("h1").innerHTML = "🚩 Draw";
-  }else {
-    document.querySelector("h1").innerHTML = "🚩 Player 3 is the winner!";
-  }
-}else if (randomNumber2 > randomNumer3) {
-  document.querySelector("h1").innerHTML = "🚩 Player 2 is the winner!";
-}else if (randomNumber2 == randomNumer3) {
-  document.querySelector("h1").innerHTML = "🚩 Player 2 and 3 are the winners!";
 }
-else{
-  document.querySelector("h1").innerHTML = "🚩 Player 3 is the winner!";
+else if (randomNumer1 == randomNumber2  ){
+  if(randomNumer1 > randomNumer3){
+    if(randomNumer1 > randomNumber4){
+      document.querySelector("h1").innerHTML = "🚩 Player 1 and 2 are the winners!";
+    } else if(randomNumer1 == randomNumber4){
+      document.querySelector("h1").innerHTML = "🚩 Player 1,2 and 4 are the winners!";
+    }else {
+      document.querySelector("h1").innerHTML = "🚩 Player 4 is the winner!";
+    }
+  } else if(randomNumer1 == randomNumer3){
+    if (randomNumer1 > randomNumber4){
+      document.querySelector("h1").innerHTML = "🚩 Player 1,2 and 3 are the winners!";
+    }else if(randomNumer1 == randomNumber4){
+      document.querySelector("h1").innerHTML = "Draw!";
+    } else {
+      document.querySelector("h1").innerHTML = "🚩 Player 4 is the winner!";
+    }
+  }
+}
+else if (randomNumber2 > randomNumer3) {
+  if (randomNumber2 > randomNumber4){
+    document.querySelector("h1").innerHTML = "🚩 Player 2 is the winner!";
+  } else if (randomNumber2 == randomNumber4){
+    document.querySelector("h1").innerHTML = "🚩 Player 2 and 4 are the winners!";
+  }else {
+    document.querySelector("h1").innerHTML = "🚩 Player 4 is the winner!";
+  }
+}else if (randomNumber2 == randomNumer3){
+  if(randomNumber2 > randomNumber4){
+    document.querySelector("h1").innerHTML = "🚩 Player 2 and 3 are the winners!";
+  } else if (randomNumber2 == randomNumber4) {
+    document.querySelector("h1").innerHTML = "🚩 Player 1,2 and 3 are the winners!";
+  } else{
+    document.querySelector("h1").innerHTML = "🚩 Player 4 is the winner!";
+  }
+} else if (randomNumer3 > randomNumber4) {
+  document.querySelector("h1").innerHTML = "🚩 Player 3 is the winners!";
+} else if(randomNumer3 == randomNumber4){
+  document.querySelector("h1").innerHTML = "🚩 Player 3 and 4 is the winner!";
+} else {
+  document.querySelector("h1").innerHTML = "🚩 Player 4 is the winner!";
+
 }
